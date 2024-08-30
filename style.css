@@ -1,0 +1,50 @@
+body{
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:beige;
+}
+
+.img{
+    width: 150px;
+}
+.card{
+    padding: 20px;
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    margin: 0 auto;
+    border-bottom: 5px solid #ff0054;
+    color: black;
+    background-color: #ffc8dd;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.text{
+    text-align: center;
+}
+@keyframes card{
+    0%{
+        transform:translateZ(0);
+    }
+    25%{
+        transform:translateZ(200px);
+        background-color: Red;
+    }
+    50%{
+        transform: translateZ(100px);
+        background-color:blue;
+    }
+    100%{
+        transform: translateZ(0);
+    }
+
+}
+.card div{ 
+    position: relative;
+    background-color: #ffc8dd;
+    animation-name: card;
+    animation-duration: 4s;
+    animation-iteration-count: 6;
+}
+
